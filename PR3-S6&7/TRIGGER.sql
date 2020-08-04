@@ -1,0 +1,8 @@
+create or replace NONEDITIONABLE TRIGGER prueba36
+    AFTER INSERT ON INVIERTE
+    FOR EACH ROW
+DECLARE
+ BEGIN
+       regalacomisiones(:NEW.DNI, :NEW.NOMBREE, :NEW.CANTIDAD, :NEW.TIPO);
+    
+END;

@@ -1,0 +1,8 @@
+
+INDEX_NAME                                                                             DISTINCT_KEYS AVG_LEAF_BLOCKS_PER_KEY AVG_DATA_BLOCKS_PER_KEY CLUSTERING_FACTOR
+-------------------------------------------------------------------------------------- ------------- ----------------------- ----------------------- -----------------
+IDX_PELISHIST__BIT_GENERO                                                                         25                       1                       1                25
+IDX_PELISHIST__FUN_DRAMA                                                                          52                       1                       5               311
+SYS_C007496                                                                                      521                       1                       1               194
+PELISH_INDEX                                                                                     521                       1                       1               516
+

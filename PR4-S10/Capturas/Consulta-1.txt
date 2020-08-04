@@ -1,0 +1,56 @@
+
+        ID TITULO                                                                                                                           ROUND(A.DRAMA) GENERO                    
+---------- -------------------------------------------------------------------------------------------------------------------------------- -------------- --------------------------
+       330 Miel de naranjas                                                                                                                             43 Drama                     
+       430 Fénix 11.23                                                                                                                                  43 Drama                     
+       466 El lado bueno de las cosas                                                                                                                   43 Drama                     
+        31 La saga Crepúsculo: Amanecer - Parte 1                                                                                                       50 Drama                     
+       282 The Pelayos                                                                                                                                  50 Comedia Dramática         
+       325 Cuando te encuentre                                                                                                                          50 Drama                     
+       359 Tengo ganas de ti                                                                                                                            50 Drama                     
+
+7 filas seleccionadas. 
+
+
+PLAN_TABLE_OUTPUT                                                                                                                 
+----------------------------------------------------------------------------------------------------------------------------------
+SQL_ID  2axwxuc415p0k, child number 0
+-------------------------------------
+select /*+ GATHER_PLAN_STATISTICS */ /* prac4s10 consulta-1 */ A.ID, 
+A.titulo,round(A.drama), H.genero from PELISHIST H, PELISAHORA A where 
+A.ID = H.ID and (round(A.drama) = 43 or round(A.drama) = 50)
+ 
+Plan hash value: 4263850774
+ 
+------------------------------------------------------------------------------------------------------------------------------
+| Id  | Operation                              | Name                      | Starts | E-Rows | A-Rows |   A-Time   | Buffers |
+------------------------------------------------------------------------------------------------------------------------------
+
+PLAN_TABLE_OUTPUT                                                                                                                 
+----------------------------------------------------------------------------------------------------------------------------------
+|   0 | SELECT STATEMENT                       |                           |      1 |        |      7 |00:00:00.01 |      25 |
+|   1 |  NESTED LOOPS                          |                           |      1 |      1 |      7 |00:00:00.01 |      25 |
+|   2 |   NESTED LOOPS                         |                           |      1 |      1 |      7 |00:00:00.01 |      18 |
+|   3 |    INLIST ITERATOR                     |                           |      1 |        |      7 |00:00:00.01 |       9 |
+|   4 |     TABLE ACCESS BY INDEX ROWID BATCHED| PELISAHORA                |      2 |      1 |      7 |00:00:00.01 |       9 |
+|*  5 |      INDEX RANGE SCAN                  | IDX_PELISAHORA__FUN_DRAMA |      2 |      1 |      7 |00:00:00.01 |       2 |
+|*  6 |    INDEX UNIQUE SCAN                   | SYS_C007496               |      7 |      1 |      7 |00:00:00.01 |       9 |
+|   7 |   TABLE ACCESS BY INDEX ROWID          | PELISHIST                 |      7 |      1 |      7 |00:00:00.01 |       7 |
+------------------------------------------------------------------------------------------------------------------------------
+ 
+Predicate Information (identified by operation id):
+
+PLAN_TABLE_OUTPUT                                                                                                                 
+----------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------
+ 
+   5 - access(("A"."SYS_NC00016$"=43 OR "A"."SYS_NC00016$"=50))
+   6 - access("A"."ID"="H"."ID")
+ 
+Note
+-----
+   - this is an adaptive plan
+ 
+
+31 filas seleccionadas. 
+

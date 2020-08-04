@@ -1,0 +1,99 @@
+/* 1 */
+{
+    "_id" : ObjectId("5ebd69d0cea78cb3256c8783"),
+    "Tema" : "Videojuegos",
+    "Apodo" : "alejru08",
+    "Nombre" : "Tomb Raider",
+    "Puntuacion" : 9,
+    "Precio" : 50
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5ebd6a67cea78cb3256c87bd"),
+    "Tema" : "Videojuegos",
+    "Apodo" : "alejru08",
+    "Nombre" : "Pokemon",
+    "Puntuacion" : 7,
+    "Precio" : 60
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5ebd6a89cea78cb3256c87c7"),
+    "Tema" : "Videojuegos",
+    "Apodo" : "alejru08",
+    "Nombre" : "God of war",
+    "Puntuacion" : 9,
+    "Precio" : 60
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("5ebd6aa5cea78cb3256c87ce"),
+    "Tema" : "Videojuegos",
+    "Apodo" : "alejru08",
+    "Nombre" : "Los sims 4",
+    "Puntuacion" : 7,
+    "Precio" : 40
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("5ebd6ac0cea78cb3256c87d1"),
+    "Tema" : "Videojuegos",
+    "Apodo" : "alejru08",
+    "Nombre" : "Destiny",
+    "Puntuacion" : 7,
+    "Precio" : 20
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("5ebd6af3cea78cb3256c87dd"),
+    "Tema" : "Videojuegos",
+    "Apodo" : "alejru08",
+    "Nombre" : "Just Dance",
+    "Puntuacion" : 7,
+    "Precio" : 40
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("5ebd6b18cea78cb3256c87e6"),
+    "Tema" : "Videojuegos",
+    "Apodo" : "alejru08",
+    "Nombre" : "Minecraft",
+    "Puntuacion" : 8,
+    "Precio" : 20
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("5ebd6b51cea78cb3256c87ed"),
+    "Tema" : "Videojuegos",
+    "Apodo" : "alejru08",
+    "Nombre" : "Little Big Planet",
+    "Puntuacion" : 6,
+    "Precio" : 40
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("5ebd6ba4cea78cb3256c8803"),
+    "Tema" : "Videojuegos",
+    "Apodo" : "alejru08",
+    "Nombre" : "Assassins Creed",
+    "Puntuacion" : 7,
+    "Precio" : 45
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("5ebd6bdacea78cb3256c880f"),
+    "Tema" : "Videojuegos",
+    "Apodo" : "alejru08",
+    "Nombre" : "Monster Hunter World",
+    "Puntuacion" : 8,
+    "Precio" : 60
+}

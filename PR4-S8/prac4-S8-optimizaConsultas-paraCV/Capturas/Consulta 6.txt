@@ -1,0 +1,42 @@
+
+5 filas eliminado
+
+
+Explicado.
+
+
+INFORME DEL PLAN                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+OPERACION    OPCIONES     TABLA        Coste Filas PADRE Id_Fi
+------------ ------------ ------------ ----- ----- ----- -----
+HASH         UNIQUE                        7     2     0     1
+HASH JOIN    SEMI                          6     2     1     2
+NESTED LOOPS SEMI                          6     2     2     3
+STATISTICS                                             3     4
+COLLECTOR                                                     
+
+HASH JOIN                                  4     4     4     5
+NESTED LOOPS                               4     4     5     6
+STATISTICS                                             6     7
+COLLECTOR                                                     
+
+
+INFORME DEL PLAN                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+OPERACION    OPCIONES     TABLA        Coste Filas PADRE Id_Fi
+------------ ------------ ------------ ----- ----- ----- -----
+TABLE ACCESS FULL         COMPRAS          2     4     7     8
+TABLE ACCESS BY INDEX     CLIENTE          2     1     6     9
+             ROWID                                            
+
+INDEX        UNIQUE SCAN  SYS_C007303                  9    10
+TABLE ACCESS FULL         CLIENTE          2     7     5    11
+INDEX        RANGE SCAN   CLAVE_INVIRT     2     2     3    12
+                          E_PRIM                              
+
+
+INFORME DEL PLAN                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+OPERACION    OPCIONES     TABLA        Coste Filas PADRE Id_Fi
+------------ ------------ ------------ ----- ----- ----- -----
+TABLE ACCESS FULL         INVIERTE         2     4     2    13
+
+13 filas seleccionadas. 
+
